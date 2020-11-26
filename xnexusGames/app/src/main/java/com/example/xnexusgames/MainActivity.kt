@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val sharedPreferences = getSharedPreferences("sharedPreferencesProdutos", MODE_PRIVATE)
+
         btnListar.setOnClickListener { v: View? ->
 
             var intent = Intent(this, listar::class.java);
@@ -35,7 +37,31 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnCadastrar.setOnClickListener { v: View? ->
+            var ultimoId = sharedPreferences.getString("ultimoId", "");
 
+            if(ultimoId == ""){
+
+                sharedPreferences.edit().putString("ultimoId", "1").apply();
+
+                sharedPreferences.edit().putString("1id", "1").apply();
+                sharedPreferences.edit().putString("1Nome", txtNome.text.toString()).apply();
+                sharedPreferences.edit().putString("1Preco", txtPreco.text.toString()).apply();
+                sharedPreferences.edit().putString("1Plataforma", txtPlataforma.text.toString()).apply();
+                Toast.makeText(this, "Produto Cadastrado com sucesso!! Id: 1", Toast.LENGTH_SHORT).show();
+            }else{
+                val ultimoIdInt = ultimoId!!.toInt() + 1;
+                sharedPreferences.edit().putString("ultimoId", ultimoId.toString()).apply();
+
+                sharedPreferences.edit().putString(ultimoIdInt.toString() + "id", ultimoIdInt.toString()).apply();
+                sharedPreferences.edit().putString(ultimoIdInt.toString() + "Nome", txtNome.text.toString()).apply();
+                sharedPreferences.edit().putString(ultimoIdInt.toString() + "Preco", txtPreco.text.toString()).apply();
+                sharedPreferences.edit().putString(ultimoIdInt.toString() + "Plataforma", txtPlataforma.text.toString()).apply();
+                Toast.makeText(this, "Produto Cadastrado com sucesso!! Id: "+ ultimoIdInt.toString(), Toast.LENGTH_SHORT).show();
+            }
+
+
+        }
 
 
 
