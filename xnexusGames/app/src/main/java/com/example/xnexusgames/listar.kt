@@ -11,15 +11,15 @@ class listar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listar)
 
-        val produtos = listOf("teste","teste2","teste3","teste4")
+        val sharedPreferences = getSharedPreferences("sharedPreferencesProdutos", MODE_PRIVATE)
+
+        val produtos = arrayOf(sharedPreferences.all)
 
         listagem.adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,produtos)
 
         listagem.setOnItemClickListener { parent, view, position, id ->
-            Toast.makeText(this,produtos[position],Toast.LENGTH_SHORT)
-
-
-
+            for (value in sharedPreferences.all)
+            Toast.makeText(this,sharedPreferences.getString("1"+"Nome",""),Toast.LENGTH_SHORT).show()
         }
 
 
