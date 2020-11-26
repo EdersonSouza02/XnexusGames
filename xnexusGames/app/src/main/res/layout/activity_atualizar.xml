@@ -29,7 +29,7 @@
         android:textSize="70px" />
 
     <EditText
-        android:id="@+id/txtIdDeletar"
+        android:id="@+id/txtNomeAlterar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
@@ -45,7 +45,7 @@
         android:textSize="21sp" />
 
     <EditText
-        android:id="@+id/txtIdDeletar"
+        android:id="@+id/txtIdAlterar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
@@ -61,7 +61,7 @@
         android:textSize="21sp" />
 
     <EditText
-        android:id="@+id/txtPreco"
+        android:id="@+id/txtPrecoAlterar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
@@ -77,7 +77,7 @@
         android:textSize="21sp" />
 
     <EditText
-        android:id="@+id/txtPlataforma"
+        android:id="@+id/txtPlataformaAlterar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
@@ -93,7 +93,7 @@
         android:textSize="21sp" />
 
     <Button
-        android:id="@+id/btnLimpar"
+        android:id="@+id/btnLimparAlterar"
         android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -107,7 +107,7 @@
         android:textSize="21sp" />
 
     <Button
-        android:id="@+id/btnAlterar2"
+        android:id="@+id/btnAlterar"
         android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
