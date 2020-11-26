@@ -1,13 +1,10 @@
 package com.example.xnexusgames
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.ArrayAdapter
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_listar.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -45,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 sharedPreferences.edit().putString("ultimoId", "1").apply();
 
                 sharedPreferences.edit().putString("1id", "1").apply();
-                sharedPreferences.edit().putString("1Nome", txtNome.text.toString()).apply();
+                sharedPreferences.edit().putString("1Nome", txtIdDeletar.text.toString()).apply();
                 sharedPreferences.edit().putString("1Preco", txtPreco.text.toString()).apply();
                 sharedPreferences.edit().putString("1Plataforma", txtPlataforma.text.toString()).apply();
                 Toast.makeText(this, "Produto Cadastrado com sucesso!! Id: 1", Toast.LENGTH_SHORT).show();
@@ -54,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                 sharedPreferences.edit().putString("ultimoId", ultimoId.toString()).apply();
 
                 sharedPreferences.edit().putString(ultimoIdInt.toString() + "id", ultimoIdInt.toString()).apply();
-                sharedPreferences.edit().putString(ultimoIdInt.toString() + "Nome", txtNome.text.toString()).apply();
+                sharedPreferences.edit().putString(ultimoIdInt.toString() + "Nome", txtIdDeletar.text.toString()).apply();
                 sharedPreferences.edit().putString(ultimoIdInt.toString() + "Preco", txtPreco.text.toString()).apply();
                 sharedPreferences.edit().putString(ultimoIdInt.toString() + "Plataforma", txtPlataforma.text.toString()).apply();
                 Toast.makeText(this, "Produto Cadastrado com sucesso!! Id: "+ ultimoIdInt.toString(), Toast.LENGTH_SHORT).show();

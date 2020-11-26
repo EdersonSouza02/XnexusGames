@@ -29,7 +29,7 @@
         android:textSize="70px" />
 
     <EditText
-        android:id="@+id/txtNome"
+        android:id="@+id/txtIdDeletar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
