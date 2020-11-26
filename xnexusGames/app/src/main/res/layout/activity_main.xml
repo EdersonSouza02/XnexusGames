@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="229dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="648dp"
+        android:text="Cadastro"
+        android:textSize="70px" />
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="585dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+
+        android:padding="10dp"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/txtPreco"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="514dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Preço"
+        android:inputType="textPersonName"
+
+        android:padding="10dp"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/txtPlataforma"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="443dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Plataforma"
+        android:inputType="textPersonName"
+
+        android:padding="10dp"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/button_background"
+        android:text="Listar"
+
+        android:textAllCaps="false"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/btnAtualizar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/button_background"
+        android:text="Atualizar"
+
+        android:textAllCaps="false"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/btnDeletar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/button_background"
+        android:text="Deletar"
+
+        android:textAllCaps="false"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="253dp"
+        android:background="@drawable/button_background"
+        android:text="Cadastrar"
+
+        android:textAllCaps="false"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="370dp"
+
+        android:background="@drawable/button_background"
+        android:text="Limpar"
+        android:textAllCaps="false"
+        android:textSize="21sp" />
+
+</RelativeLayout>
