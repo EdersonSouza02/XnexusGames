@@ -3,6 +3,7 @@ package com.example.xnexusgames
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.ListView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_listar.*
 
@@ -13,15 +14,17 @@ class listar : AppCompatActivity() {
 
         val sharedPreferences = getSharedPreferences("sharedPreferencesProdutos", MODE_PRIVATE)
 
-        val produtos = arrayOf(sharedPreferences.all)
+        val arrayAdapter: ArrayAdapter<*>
+        val personas = mutableListOf<String>()
 
-        listagem.adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,produtos)
-
-        listagem.setOnItemClickListener { parent, view, position, id ->
-            for (value in sharedPreferences.all)
-            Toast.makeText(this,sharedPreferences.getString("1"+"Nome",""),Toast.LENGTH_SHORT).show()
+        for (nomes in sharedPreferences.all) {
+            val result = nomes.toString()
+            if(result.substring(1, 5) == "Nome")
+                personas.add(result.substring(6, result.length))
         }
 
-
+        val dados = findViewById<ListView>(R.id.listagem)
+        arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, personas)
+        dados.adapter = arrayAdapter
     }
 }
