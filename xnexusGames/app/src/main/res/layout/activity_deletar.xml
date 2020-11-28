@@ -39,7 +39,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="ID"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
 
         android:padding="10dp"
         android:textSize="21sp" />

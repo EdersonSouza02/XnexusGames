@@ -27,6 +27,11 @@ class atualizar : AppCompatActivity() {
             sharedPreferences.edit().putString(txtIdAlterar.text.toString() + "Plataforma", txtNomeAlterar.text.toString()).apply();
 
             Toast.makeText(this, "produto alterado com sucesso! id:"+txtIdAlterar.text.toString(),Toast.LENGTH_SHORT).show();
+
+            txtIdAlterar.setText("")
+            txtNomeAlterar.setText("")
+            txtPrecoAlterar.setText("")
+            txtPlataformaAlterar.setText("")
         }
     }
 }

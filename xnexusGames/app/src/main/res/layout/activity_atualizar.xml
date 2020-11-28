@@ -55,7 +55,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Id"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
 
         android:padding="10dp"
         android:textSize="21sp" />
@@ -71,7 +71,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Preço"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
 
         android:padding="10dp"
         android:textSize="21sp" />

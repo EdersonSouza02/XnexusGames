@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_atualizar.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -57,7 +58,15 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Produto Cadastrado com sucesso!! Id: "+ ultimoIdInt.toString(), Toast.LENGTH_SHORT).show();
             }
 
+            txtIdDeletar.setText("")
+            txtPreco.setText("")
+            txtPlataforma.setText("")
+        }
 
+        btnLimpar.setOnClickListener { v: View? ->
+            txtIdDeletar.setText("")
+            txtPreco.setText("")
+            txtPlataforma.setText("")
         }
 
     }

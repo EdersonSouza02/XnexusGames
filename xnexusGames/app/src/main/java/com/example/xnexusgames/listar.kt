@@ -18,6 +18,7 @@ class listar : AppCompatActivity() {
         val personas = mutableListOf<String>()
 
         for (nomes in sharedPreferences.all) {
+
             val result = nomes.toString()
             if(result.substring(1, 5) == "Nome")
                 personas.add(result.substring(6, result.length))
